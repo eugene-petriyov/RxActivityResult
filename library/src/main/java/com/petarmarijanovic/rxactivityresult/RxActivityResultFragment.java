@@ -78,4 +78,11 @@ public class RxActivityResultFragment extends Fragment {
       }
     };
   }
+
+  public Single<ActivityResult> start(int requestCode) {
+    return resultSubject
+            .filter(isRequestCodeEqual(requestCode))
+            .map(toActivityResult())
+            .firstOrError();
+  }
 }

@@ -41,4 +41,8 @@ public class RxActivityResult {
   public Single<ActivityResult> start(final PendingIntent pendingIntent) {
     return fragment.start(pendingIntent);
   }
+  
+  public Single<ActivityResult> start(int requestCode) {
+    return fragment.start(requestCode);
+  }  
 }
