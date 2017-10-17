@@ -11,7 +11,7 @@ import io.reactivex.Single;
 /** Created by petar on 26/07/2017. */
 public class RxActivityResult {
 
-  private static final String FRAGMENT_TAG =
+  public static final String FRAGMENT_TAG =
       "com.petarmarijanovic.rxactivityresult.RxActivityResultFragment";
 
   private RxActivityResultFragment fragment;
